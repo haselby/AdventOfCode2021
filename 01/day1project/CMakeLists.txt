@@ -9,10 +9,12 @@ file(COPY "day1puzzle-input.txt" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 # Add source to this project's executable.
 add_executable (
 	day1project
-	"day1project.cpp"
 	"day1project.h"
-	"loadpuzzle.cpp"
+	"day1project.cpp"
 	"loadpuzzle.h"
+	"loadpuzzle.cpp"	
+	"depthfinder.h"
+	"depthfinder.cpp"
 )
 
 # Add tests and install targets if needed.
