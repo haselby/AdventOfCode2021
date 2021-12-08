@@ -4,6 +4,8 @@ project ("day1project")
 
 set(CMAKE_CXX_STANDARD 20)
 
+file(COPY "day1puzzle-input.txt" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
 # Add source to this project's executable.
 add_executable (
 	day1project

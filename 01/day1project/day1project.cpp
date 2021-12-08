@@ -19,11 +19,11 @@ int numberOfDepthSumOfMeasurementIncreases(vector<int> vect);
 int main()
 {
 	//Test Input
-	//vector<int> TestInput = readInFileOfIntegers("C:\\GitHubPub\\AdventOfCode2021\\01\\day1project\\day1test1-input.txt");
+	//vector<int> TestInput = readInFileOfIntegers("day1test1-input.txt");
 
 	//Part 1
 	cout << "Running Day 1 Program" << endl;
-	vector<int> puzzleInput = readInFileOfIntegers("C:\\GitHubPub\\AdventOfCode2021\\01\\day1project\\day1puzzle-input.txt");
+	vector<int> puzzleInput = readInFileOfIntegers("day1puzzle-input.txt");
 	printVectorOfIntegers(puzzleInput);
 	cout << "Number of times a depth measurement increased: " << numberOfDepthIncreases(puzzleInput) << endl;
 
