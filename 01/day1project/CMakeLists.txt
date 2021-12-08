@@ -1,11 +1,14 @@
-﻿# CMakeList.txt : CMake project for day1project, include source and define
-# project specific logic here.
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.21)
 
 project ("day1project")
 
-# Add source to this project's executable.
-add_executable (day1project "day1project.cpp" "day1project.h")
+set(CMAKE_CXX_STANDARD 20)
 
-# TODO: Add tests and install targets if needed.
+# Add source to this project's executable.
+add_executable (
+	day1project
+	"day1project.cpp"
+	"day1project.h"
+)
+
+# Add tests and install targets if needed.
