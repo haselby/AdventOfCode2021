@@ -2,13 +2,18 @@
 //
 
 #include "day1project.h"
+#include "loadpuzzle.h"
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <vector>
+
 
 using namespace std;
 
 int numberOfDepthIncreases(vector<int> vect);
 int numberOfDepthSumOfMeasurementIncreases(vector<int> vect);
-void printVectorOfIntegers(vector<int> vect);
-vector<int> readInFileOfIntegers(string filename);
 
 
 int main()
@@ -27,27 +32,6 @@ int main()
 	return 0;
 }
 
-vector<int> readInFileOfIntegers(string filename) {
-	vector<int> vect;
-	ifstream input;
-	input.open(filename);
-	string line;
-	int x{ 0 };
-	while (getline(input, line)) {
-		stringstream ss(line);
-		ss >> x;
-		vect.push_back(x);
-	}
-	input.close();
-	return vect;
-}
-
-void printVectorOfIntegers(vector<int> vect) {
-	for (auto x : vect)
-	{
-		cout << x << endl;
-	}
-}
 
 int numberOfDepthIncreases(vector<int> vect) {
 

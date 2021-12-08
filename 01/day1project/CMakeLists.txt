@@ -9,6 +9,8 @@ add_executable (
 	day1project
 	"day1project.cpp"
 	"day1project.h"
+	"loadpuzzle.cpp"
+	"loadpuzzle.h"
 )
 
 # Add tests and install targets if needed.
