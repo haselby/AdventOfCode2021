@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<int> readInFileOfIntegers(string filename) {
+vector<int> readInFileOfIntegers(string filename, bool verbose) {
 	vector<int> vect;
 	ifstream input;
 	input.open(filename);
@@ -15,7 +15,7 @@ vector<int> readInFileOfIntegers(string filename) {
 	}
 	input.close();
 
-	if (true) {
+	if (verbose) {
 		cout << "Read-in file: " << filename << endl;
 	}
 	return vect;

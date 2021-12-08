@@ -6,4 +6,4 @@
 #include <sstream>
 #include <vector>
 
-std::vector<int> readInFileOfIntegers(std::string filename);
+std::vector<int> readInFileOfIntegers(std::string filename, bool verbose = true);
