@@ -5,8 +5,6 @@
 #include "loadpuzzle.h"
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <sstream>
 #include <vector>
 
 
@@ -24,7 +22,7 @@ int main()
 	//Part 1
 	cout << "Running Day 1 Program" << endl;
 	vector<int> puzzleInput = readInFileOfIntegers("day1puzzle-input.txt");
-	printVectorOfIntegers(puzzleInput);
+
 	cout << "Number of times a depth measurement increased: " << numberOfDepthIncreases(puzzleInput) << endl;
 
 	//Part 2

@@ -14,12 +14,10 @@ vector<int> readInFileOfIntegers(string filename) {
 		vect.push_back(x);
 	}
 	input.close();
+
+	if (true) {
+		cout << "Read-in file: " << filename << endl;
+	}
 	return vect;
 }
 
-void printVectorOfIntegers(vector<int> vect) {
-	for (auto x : vect)
-	{
-		cout << x << endl;
-	}
-}

@@ -8,6 +8,4 @@
 
 using namespace std;
 
-void printVectorOfIntegers(vector<int> vect);
-
 vector<int> readInFileOfIntegers(string filename);
